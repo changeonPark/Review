@@ -51,11 +51,14 @@ void main(){
     Queue que;
     que.front = que.rear = NULL;
     que.count = 0;
-
+    printf("rear : %d front : %d\n", que.rear, que.front);
     pop(&que);
     push(&que, 3);
+    printf("rear : %d front : %d\n", que.rear, que.front);
     push(&que, 2);
+    printf("rear : %d front : %d\n", que.rear, que.front);
     show(&que);
     pop(&que);
+    printf("rear : %d front : %d\n", que.rear, que.front);
     show(&que);
 }
